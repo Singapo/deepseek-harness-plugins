@@ -16,6 +16,16 @@
 
 [任务复盘截图](artifacts/task-lens-1440.png) · [插件说明](task-lens/README.md)
 
+## 在 DSH 插件市场找到这两个插件
+
+在「插件」的实验功能中启用 **Custom plugin indexes（自定义插件索引）**，进入 **Discover（发现）**，点击 **Add index source（添加索引源）**，粘贴下面的地址。这是本项目维护的公开索引。
+
+~~~text
+https://raw.githubusercontent.com/Singapo/deepseek-harness-plugins/main/index.json
+~~~
+
+选择这个索引后，搜索「较真」或「再改一版」，打开卡片查看版本和安装来源。两张卡片分别安装对应的插件，兼容范围为已验证的 DSH 0.2.1-rc.2。安装「较真」后默认为普通核验工具，严格模式按子项目说明单独启用。
+
 ## 本地体验
 
 从仓库根目录运行以下命令。需要 Node.js 22 或更新版本，两个离线演示均无需安装依赖或配置 API Key。

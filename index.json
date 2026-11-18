@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "title": {
+    "zh": "较真与再改一版",
+    "en": "Singapo DSH plugins"
+  },
+  "plugins": [
+    {
+      "name": "dsh-evidence-ledger",
+      "title": {
+        "zh": "较真",
+        "en": "Jiaozhen"
+      },
+      "description": {
+        "zh": "数据没核清，先别交。读取固定的原始表，核对对象、期间、单位，重算数字；未全部通过就不生成交付正文。",
+        "en": "Jiaozhen: official-source data verification and protected Harness output"
+      },
+      "author": "Singapo",
+      "icon": "evidence-ledger/icon.svg",
+      "homepage": "https://github.com/Singapo/deepseek-harness-plugins/tree/main/evidence-ledger",
+      "repository": {
+        "url": "https://github.com/Singapo/deepseek-harness-plugins",
+        "directory": "evidence-ledger"
+      },
+      "keywords": [
+        "dsh-plugin",
+        "deepseek-harness",
+        "data-verification",
+        "hallucination",
+        "provenance"
+      ],
+      "versions": [
+        {
+          "version": "0.3.0",
+          "publishTimestamp": 1794990221,
+          "source": {
+            "path": "evidence-ledger",
+            "type": "git",
+            "url": "https://github.com/Singapo/deepseek-harness-plugins",
+            "commit": "bc7903ad6bfebb40449078d7b6f446ca8c429590"
+          },
+          "engines": {
+            "dsh": "0.2.1-rc.2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-task-lens",
+      "title": {
+        "zh": "再改一版",
+        "en": "One More Draft"
+      },
+      "description": {
+        "zh": "按工作单元复盘首次交付、用户纠正与失败恢复，每项指标保留证据和未知口径。",
+        "en": "Evidence-linked first-pass and rework analysis for agent tasks"
+      },
+      "author": "Singapo",
+      "icon": "task-lens/icon.svg",
+      "homepage": "https://github.com/Singapo/deepseek-harness-plugins/tree/main/task-lens",
+      "repository": {
+        "url": "https://github.com/Singapo/deepseek-harness-plugins",
+        "directory": "task-lens"
+      },
+      "keywords": [
+        "dsh-plugin",
+        "deepseek-harness",
+        "agent-evaluation",
+        "rework"
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794990221,
+          "source": {
+            "path": "task-lens",
+            "type": "git",
+            "url": "https://github.com/Singapo/deepseek-harness-plugins",
+            "commit": "bc7903ad6bfebb40449078d7b6f446ca8c429590"
+          },
+          "engines": {
+            "dsh": "0.2.1-rc.2"
+          }
+        }
+      ]
+    }
+  ]
+}
