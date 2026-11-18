@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "notice": "合成数据，只用于测试；不是任何真实公司的财务披露。",
+  "rows": [
+    { "entity": "示例水泥", "period": "2023", "metric": "营业收入", "unit": "元", "value": "1000000", "basis": "reported" },
+    { "entity": "示例水泥", "period": "2024", "metric": "营业收入", "unit": "万元", "value": "120", "basis": "reported" }
+  ]
+}

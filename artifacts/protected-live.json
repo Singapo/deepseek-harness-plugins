@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-11-17T10:36:19.050Z",
+  "sdk": "0.2.1-rc.2",
+  "method": "real official services + live official HTTPS response",
+  "output": "CHN 2024 人口总数（世界银行发布值）：1408975000 人。\n\n来源：https://api.worldbank.org/v2/country/CHN/indicator/SP.POP.TOTL?format=json&per_page=100（发布更新 2026-11-11；取数 2026-11-17T10:36:17.848Z；原始响应 SHA-256 f0b604a20fa80019f75f0ac17a11a86255264ca601ad679be23347c25fed83df）",
+  "modelCallsDuringLive": 0,
+  "paidModelCalls": 0
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "project": "task-lens",
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "filter": true,
+    "searchEmptyState": true,
+    "jsonExportMatches": true,
+    "keyboard": true,
+    "externalRequests": 0,
+    "browserErrors": 0
+  },
+  {
+    "project": "evidence-ledger",
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "filter": true,
+    "searchEmptyState": true,
+    "jsonExportMatches": true,
+    "keyboard": true,
+    "externalRequests": 0,
+    "browserErrors": 0
+  }
+]

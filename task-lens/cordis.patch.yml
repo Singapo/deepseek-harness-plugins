@@ -1,0 +1,4 @@
+- insert:
+    - id: task-lens
+      name: dsh-task-lens
+      config: {}

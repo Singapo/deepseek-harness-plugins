@@ -1,0 +1,20 @@
+{
+  "sdk": "0.2.1-rc.2",
+  "checkedAt": "2026-11-17T10:36:19.051Z",
+  "method": "real official services, fixture HTTP and fixture model",
+  "checks": [
+    "verified text and official provenance stream; untrusted adapter not called",
+    "user instruction cannot bypass deterministic output",
+    "real ToolRuntime guard blocks every tool, including writing, alternate request and diagnostic tool",
+    "request changed after pass: re-read and block, no stale pass",
+    "official endpoint unavailable: block, no cached success",
+    "malformed request cannot fall back to model",
+    "cancelled run has no output; auxiliary title contains no invented data",
+    "disposal removes stream hook and guard: control case reaches fixture model and tool",
+    "invalid protection configuration stays blocked instead of falling back to model",
+    "live official HTTPS data passes through protected LlmRuntime with zero model dispatches"
+  ],
+  "paidModelCalls": 0,
+  "untrustedAdapterCallsDuringProtection": 0,
+  "untrustedAdapterCallsAfterDisposal": 1
+}

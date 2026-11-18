@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 2,
+  "label": "世界银行官方接口 · 中国 2024 年人口发布值",
+  "sources": [{ "id": "wdi", "title": "世界银行 WDI · SP.POP.TOTL", "provider": "worldbank", "country": "CHN", "from": 2024, "to": 2024 }],
+  "claims": [{ "id": "population", "entity": "CHN", "period": "2024", "metric": "人口总数（世界银行发布值）", "unit": "人", "operation": "value", "reportedValue": "1408975000", "decimals": 0,
+    "inputs": [{ "sourceId": "wdi", "entity": "CHN", "period": "2024", "metric": "人口总数（世界银行发布值）", "unit": "人" }] }]
+}

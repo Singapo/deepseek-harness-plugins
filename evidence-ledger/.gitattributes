@@ -1,0 +1,2 @@
+# Keep pinned fixture bytes stable across Windows and Unix checkouts.
+examples/data/*.json text eol=lf

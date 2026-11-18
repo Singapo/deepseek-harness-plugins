@@ -1,0 +1,15 @@
+{
+  "name": "dsh-task-lens",
+  "version": "0.1.0",
+  "description": "Evidence-linked first-pass and rework analysis for agent tasks",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22", "dsh": "0.2.1-rc.2" },
+  "exports": { ".": "./index.js", "./core": "./src/core.js", "./package.json": "./package.json", "./locale/*.json": "./locale/*.json", "./icon": "./icon.svg" },
+  "files": ["index.js", "src/", "bin/", "cordis.patch.yml", "locale/", "icon.svg", "examples/", "README.md", "LICENSE"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "peerDependencies": { "@deepseek-ai/dsh-tools": "0.2.1-rc.2" },
+  "peerDependenciesMeta": { "@deepseek-ai/dsh-tools": { "optional": true } },
+  "scripts": { "test": "node --test", "demo": "node bin/cli.js examples/tasks.json --out output/demo" },
+  "keywords": ["dsh-plugin", "deepseek-harness", "agent-evaluation", "rework"]
+}

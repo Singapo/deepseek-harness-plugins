@@ -1,0 +1,15 @@
+{
+  "name": "dsh-evidence-ledger",
+  "version": "0.3.0",
+  "description": "Jiaozhen: official-source data verification and protected Harness output",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22", "dsh": "0.2.1-rc.2" },
+  "exports": { ".": "./index.js", "./protected": "./protected.js", "./core": "./src/core.js", "./verify": "./src/verify.js", "./workflow": "./src/workflow.js", "./package.json": "./package.json", "./locale/*.json": "./locale/*.json", "./icon": "./icon.svg" },
+  "files": ["index.js", "protected.js", "src/", "bin/", "cordis.patch.yml", "locale/", "icon.svg", "examples/", "README.md", "LICENSE"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "peerDependencies": { "@deepseek-ai/dsh-tools": "0.2.1-rc.2" },
+  "peerDependenciesMeta": { "@deepseek-ai/dsh-tools": { "optional": true } },
+  "scripts": { "test": "node --test", "demo:authority": "node bin/verify.js examples/check-authority.json --out output/authority", "demo": "node bin/verify.js examples/check-pass.json --out output/demo", "demo:blocked": "node bin/verify.js examples/check.json --out output/blocked", "demo:citations": "node bin/cli.js examples/brief.json --out output/citations" },
+  "keywords": ["dsh-plugin", "deepseek-harness", "data-verification", "hallucination", "provenance"]
+}

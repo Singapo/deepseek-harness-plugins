@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "label": "合成演示 · 某笔记产品版本研究（不代表真实产品事实）",
+  "sources": [
+    { "id": "release", "title": "合成：官方版本说明", "url": "https://example.com/release?v=2&utm_source=demo", "origin": "demo-vendor", "capturedAt": "2026-11-17T10:00:00+08:00", "content": "版本 2 提供离线文字笔记。在线摘要为可选功能，开启后笔记正文会发送到服务端。语音识别仅支持中文。" },
+    { "id": "reprint", "title": "合成：媒体转载", "url": "https://example.org/news/2", "origin": "demo-vendor", "upstream": "https://example.com/release?v=2", "capturedAt": "2026-11-17T10:02:00+08:00", "content": "根据官方发布，版本 2 提供离线文字笔记，在线摘要为可选功能。" },
+    { "id": "review", "title": "合成：独立测试记录", "url": "https://example.net/review", "origin": "demo-reviewer", "capturedAt": "2026-11-17T10:05:00+08:00", "content": "断网测试中，文字笔记可以正常保存。在线摘要不可用。实测语音识别还支持英文，与版本说明不一致，需要进一步确认。" }
+  ],
+  "claims": [
+    { "id": "offline-notes", "text": "断网时可以保存文字笔记。", "evidence": [
+      { "sourceId": "release", "quote": "版本 2 提供离线文字笔记", "stance": "supports" },
+      { "sourceId": "review", "quote": "断网测试中，文字笔记可以正常保存", "stance": "supports" }
+    ] },
+    { "id": "reprint-count", "text": "有两篇报道提到可选在线摘要，但它们来自同一原始发布。", "evidence": [
+      { "sourceId": "release", "quote": "在线摘要为可选功能", "stance": "supports" },
+      { "sourceId": "reprint", "quote": "在线摘要为可选功能", "stance": "supports" }
+    ] },
+    { "id": "language", "text": "语音识别只支持中文。", "evidence": [
+      { "sourceId": "release", "quote": "语音识别仅支持中文", "stance": "supports" },
+      { "sourceId": "review", "quote": "实测语音识别还支持英文", "stance": "contradicts" }
+    ] },
+    { "id": "privacy", "text": "所有功能都不会上传笔记。", "evidence": [
+      { "sourceId": "release", "quote": "所有功能都不会上传笔记", "stance": "supports" }
+    ] },
+    { "id": "retention", "text": "新版本提升了留存率。", "evidence": [] }
+  ]
+}

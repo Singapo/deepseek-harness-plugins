@@ -1,0 +1,7 @@
+{
+  "method": "Official dsh CLI profile boot and installed bundle dispatch; no custom resolver",
+  "sdk": "0.2.1-rc.2",
+  "taskLens": true,
+  "evidenceLedger": true,
+  "paidModelCalls": 0
+}

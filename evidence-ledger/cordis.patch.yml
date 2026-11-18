@@ -1,0 +1,4 @@
+- insert:
+    - id: evidence-ledger
+      name: dsh-evidence-ledger
+      config: {}

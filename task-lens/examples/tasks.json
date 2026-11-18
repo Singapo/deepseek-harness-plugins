@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "label": "合成演示 · 非历史 35 条数据 / Synthetic fixtures",
+  "tasks": [
+    { "id": "note-title", "project": "笔记工具示例", "goal": "后台 Wiki 处理后保留新标题", "model": "demo-model", "harness": "dsh",
+      "final": { "value": "pass", "evidence": [{ "ref": "synthetic:note-title#verified", "note": "合成记录：字段定向写回后，连续保存两条标题均保留。" }] },
+      "firstPass": { "value": "fail", "evidence": [{ "ref": "synthetic:note-title#first", "note": "合成记录：第一次交付后标题被旧对象覆盖。" }] },
+      "corrections": { "value": 2, "evidence": [{ "ref": "synthetic:note-title#review", "note": "合成记录：用户分别指出覆盖和连续保存遗漏。" }] } },
+    { "id": "news-dedup", "project": "资讯工具示例", "goal": "相同来源转载不重复加分", "model": "demo-model", "harness": "dsh",
+      "final": { "value": "pass", "evidence": [{ "ref": "synthetic:news-dedup#verified", "note": "合成记录：三篇同源报道仅计一个来源。" }] },
+      "firstPass": { "value": "pass", "evidence": [{ "ref": "synthetic:news-dedup#first", "note": "合成记录：首次验收满足去重要求。" }] },
+      "corrections": { "value": 0, "evidence": [{ "ref": "synthetic:news-dedup#review", "note": "合成记录：完整观察窗口内没有纠正。" }] } },
+    { "id": "source-gaps", "project": "研究工具示例", "goal": "补齐某项结论的原始依据", "model": "demo-model", "harness": "dsh",
+      "final": { "value": "fail", "evidence": [{ "ref": "synthetic:source-gaps#end", "note": "合成记录：结案时仍无原始来源。" }] },
+      "firstPass": { "value": "fail", "evidence": [{ "ref": "synthetic:source-gaps#first", "note": "合成记录：第一次只给出了二手转述。" }] },
+      "corrections": { "value": 1, "evidence": [{ "ref": "synthetic:source-gaps#review", "note": "合成记录：用户要求返回原始披露。" }] } },
+    { "id": "incomplete-log", "project": "研究工具示例", "goal": "检查来源时效性", "model": "demo-model", "harness": "dsh",
+      "final": { "value": "pass", "evidence": [{ "ref": "synthetic:incomplete-log#end", "note": "合成记录：最终材料完成时效检查，初始记录缺失。" }] },
+      "firstPass": { "value": "unknown", "evidence": [] }, "corrections": { "value": null, "evidence": [] } }
+  ]
+}

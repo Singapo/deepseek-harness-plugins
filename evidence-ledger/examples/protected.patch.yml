@@ -1,0 +1,6 @@
+# Replace requestPath with an absolute path. Use only in a dedicated data-verification profile.
+- insert:
+    - id: jiaozhen-protected
+      name: dsh-evidence-ledger/protected
+      config:
+        requestPath: '/absolute/path/to/evidence-ledger/examples/check-authority.json'

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "label": "合成演示 · 把不该交付的数字拦下来",
+  "sources": [{ "id": "disclosure", "title": "合成：两期数据原始表", "path": "data/disclosure.json", "sha256": "8162819d1b4ba6eb1570a223b2ab894b4e17120600f17b048555ab64a5a827b3" }],
+  "claims": [
+    { "id": "correct-value", "entity": "示例水泥", "period": "2024", "metric": "营业收入", "unit": "万元", "operation": "value", "reportedValue": "120", "decimals": 2,
+      "inputs": [{ "sourceId": "disclosure", "entity": "示例水泥", "period": "2024", "metric": "营业收入", "unit": "万元" }] },
+    { "id": "invented-growth", "entity": "示例水泥", "period": "2024", "metric": "营业收入", "unit": "%", "operation": "growth", "reportedValue": "25", "decimals": 2,
+      "inputs": [
+        { "sourceId": "disclosure", "entity": "示例水泥", "period": "2023", "metric": "营业收入", "unit": "元" },
+        { "sourceId": "disclosure", "entity": "示例水泥", "period": "2024", "metric": "营业收入", "unit": "万元" }
+      ] },
+    { "id": "wrong-company", "entity": "示例建材", "period": "2024", "metric": "营业收入", "unit": "万元", "operation": "value", "reportedValue": "120", "decimals": 2,
+      "inputs": [{ "sourceId": "disclosure", "entity": "示例水泥", "period": "2024", "metric": "营业收入", "unit": "万元" }] },
+    { "id": "wrong-period", "entity": "示例水泥", "period": "2023", "metric": "营业收入", "unit": "万元", "operation": "value", "reportedValue": "120", "decimals": 2,
+      "inputs": [{ "sourceId": "disclosure", "entity": "示例水泥", "period": "2024", "metric": "营业收入", "unit": "万元" }] },
+    { "id": "unverified-forecast", "entity": "示例水泥", "period": "2025", "metric": "营业收入", "unit": "万元", "operation": "forecast", "reportedValue": "150", "decimals": 2, "inputs": [] }
+  ]
+}
