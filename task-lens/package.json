@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Evidence-linked first-pass and rework analysis for agent tasks",
   "type": "module",
+  "repository": { "type": "git", "url": "git+https://github.com/Singapo/deepseek-harness-plugins.git", "directory": "task-lens" },
   "license": "MIT",
   "engines": { "node": ">=22", "dsh": "0.2.1-rc.2" },
   "exports": { ".": "./index.js", "./core": "./src/core.js", "./package.json": "./package.json", "./locale/*.json": "./locale/*.json", "./icon": "./icon.svg" },
